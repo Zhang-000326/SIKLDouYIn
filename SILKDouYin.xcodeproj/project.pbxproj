@@ -1,0 +1,1508 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2B01168E281501B6005A0F5B /* SILKSplashShakeTipView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B01168D281501B6005A0F5B /* SILKSplashShakeTipView.m */; };
+		2B011691281501C7005A0F5B /* SILKSplashShakeContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B011690281501C7005A0F5B /* SILKSplashShakeContainer.m */; };
+		2B011694281501DE005A0F5B /* SILKSplashMotionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B011693281501DE005A0F5B /* SILKSplashMotionManager.m */; };
+		2B01730C28156133005A0F5B /* shake_hand.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2B01730B28156133005A0F5B /* shake_hand.gif */; };
+		2B01730F281574E5005A0F5B /* SILKSplashView+Gesture.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B01730E281574E5005A0F5B /* SILKSplashView+Gesture.m */; };
+		2B017313281576F7005A0F5B /* SILKBaseGestureRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B017312281576F7005A0F5B /* SILKBaseGestureRecognizer.m */; };
+		2B0DBBE327FEB873006983F1 /* SILKCommerceManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B0DBBE227FEB873006983F1 /* SILKCommerceManager.m */; };
+		2B13F52927E36C1C009BC6BF /* NSArray+SILKAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B13F52827E36C1C009BC6BF /* NSArray+SILKAdditions.m */; };
+		2B18240B27B2AF4800826E9F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B18240A27B2AF4800826E9F /* AppDelegate.m */; };
+		2B18241427B2AF4800826E9F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B18241227B2AF4800826E9F /* Main.storyboard */; };
+		2B18241627B2AF4C00826E9F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B18241527B2AF4C00826E9F /* Assets.xcassets */; };
+		2B18241927B2AF4C00826E9F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B18241727B2AF4C00826E9F /* LaunchScreen.storyboard */; };
+		2B18241C27B2AF4C00826E9F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B18241B27B2AF4C00826E9F /* main.m */; };
+		2B18242627B2AF4C00826E9F /* SILKDouYinTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B18242527B2AF4C00826E9F /* SILKDouYinTests.m */; };
+		2B18243027B2AF4C00826E9F /* SILKDouYinUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B18242F27B2AF4C00826E9F /* SILKDouYinUITests.m */; };
+		2B18243227B2AF4C00826E9F /* SILKDouYinUITestsLaunchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B18243127B2AF4C00826E9F /* SILKDouYinUITestsLaunchTests.m */; };
+		2B302BEA27F030CB00C165BA /* UIView+SILKAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B302BE927F030CB00C165BA /* UIView+SILKAdditions.m */; };
+		2B302BF527F031FC00C165BA /* UIWindow+SILKAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B302BF427F031FC00C165BA /* UIWindow+SILKAdditions.m */; };
+		2B302BF827F0344D00C165BA /* UIColor+SILKAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B302BF727F0344D00C165BA /* UIColor+SILKAdditions.m */; };
+		2B302BFD27F034CE00C165BA /* SILKMacros.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B302BFC27F034CE00C165BA /* SILKMacros.m */; };
+		2B302C0027F0350B00C165BA /* SILKHookUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B302BFF27F0350B00C165BA /* SILKHookUtil.m */; };
+		2B302C0327F03D7500C165BA /* NSData+SILKAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B302C0227F03D7500C165BA /* NSData+SILKAdditions.m */; };
+		2B302C0627F03DCC00C165BA /* NSString+SILKAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B302C0527F03DCC00C165BA /* NSString+SILKAdditions.m */; };
+		2B302C0E27F05DAA00C165BA /* SILKMainManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B302C0D27F05DAA00C165BA /* SILKMainManager.m */; };
+		2B302C1127F0669500C165BA /* SILKMainTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B302C1027F0669500C165BA /* SILKMainTabBarController.m */; };
+		2B302C1E27F07FAA00C165BA /* SILKServiceCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B302C1D27F07FAA00C165BA /* SILKServiceCenter.m */; };
+		2B302C2227F0989200C165BA /* SILKService.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B302C2127F0989200C165BA /* SILKService.m */; };
+		2B302C2D27F0CD9800C165BA /* SILKMainTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B302C2C27F0CD9800C165BA /* SILKMainTabBar.m */; };
+		2B302C3027F0CE8900C165BA /* UIImage+SILKAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B302C2F27F0CE8900C165BA /* UIImage+SILKAdditions.m */; };
+		2B302C3E27F0D94000C165BA /* UIDevice+SILKAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B302C3D27F0D94000C165BA /* UIDevice+SILKAdditions.m */; };
+		2B302C4127F0E28200C165BA /* UITabBar+SILKAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B302C4027F0E28200C165BA /* UITabBar+SILKAdditions.m */; };
+		2B310695280C313500768BE0 /* SILKUserCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B310694280C313500768BE0 /* SILKUserCollectionCell.m */; };
+		2B310698280C34E800768BE0 /* SILKUserCollectionFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B310697280C34E800768BE0 /* SILKUserCollectionFlowLayout.m */; };
+		2B6445C127F493720024AE5B /* SILKFeedMusicNameLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B6445C027F493720024AE5B /* SILKFeedMusicNameLabel.m */; };
+		2B64469427F49C9B0024AE5B /* SILKFeedMusicCDView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B64469327F49C9B0024AE5B /* SILKFeedMusicCDView.m */; };
+		2B64469727F4A2EE0024AE5B /* SILKFeedLoveView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B64469627F4A2EE0024AE5B /* SILKFeedLoveView.m */; };
+		2B64469A27F4BC2F0024AE5B /* SILKFeedFocusView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B64469927F4BC2F0024AE5B /* SILKFeedFocusView.m */; };
+		2B64469E27F4C7390024AE5B /* SILKFeedSharePopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B64469D27F4C7390024AE5B /* SILKFeedSharePopView.m */; };
+		2B9E337E27EF4C77008CEFE2 /* NSDictionary+SILKAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B9E337D27EF4C77008CEFE2 /* NSDictionary+SILKAdditions.m */; };
+		2BA26F9A2813D37E00811A31 /* SILKSplashView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BA26F992813D37E00811A31 /* SILKSplashView.m */; };
+		2BA26FA02813D66800811A31 /* SILKSplashButtonViewContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BA26F9F2813D66800811A31 /* SILKSplashButtonViewContainer.m */; };
+		2BA26FA92813DFF200811A31 /* SILKSplashButtonView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BA26FA82813DFF200811A31 /* SILKSplashButtonView.m */; };
+		2BA26FAC2813E96000811A31 /* SILKSplashSlideSideView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BA26FAB2813E96000811A31 /* SILKSplashSlideSideView.m */; };
+		2BA26FAF2813E97000811A31 /* SILKSplashSlideSideContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BA26FAE2813E97000811A31 /* SILKSplashSlideSideContainer.m */; };
+		2BA26FB22813EB3700811A31 /* SILKSplashSlideUpView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BA26FB12813EB3700811A31 /* SILKSplashSlideUpView.m */; };
+		2BA26FB52813EB4900811A31 /* SILKSplashSlideUpContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BA26FB42813EB4900811A31 /* SILKSplashSlideUpContainer.m */; };
+		2BA26FB82813EBC200811A31 /* SILKSplashSlideUpButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BA26FB72813EBC200811A31 /* SILKSplashSlideUpButton.m */; };
+		2BA26FBB2813F00200811A31 /* SILKSplashSkipView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BA26FBA2813F00200811A31 /* SILKSplashSkipView.m */; };
+		2BA26FC12814262700811A31 /* SILKSplashGoButtonView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BA26FC02814262700811A31 /* SILKSplashGoButtonView.m */; };
+		2BA26FC42814263B00811A31 /* SILKSplashGoButtonContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BA26FC32814263B00811A31 /* SILKSplashGoButtonContainer.m */; };
+		2BA6A982280B1301004DFCC1 /* SILKUserManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BA6A981280B1301004DFCC1 /* SILKUserManager.m */; };
+		2BA6A985280B1358004DFCC1 /* SILKUserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BA6A984280B1358004DFCC1 /* SILKUserModel.m */; };
+		2BA6A987280B15C7004DFCC1 /* user.json in Resources */ = {isa = PBXBuildFile; fileRef = 2BA6A986280B15C7004DFCC1 /* user.json */; };
+		2BA6A98A280B17F6004DFCC1 /* SILKUserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BA6A989280B17F6004DFCC1 /* SILKUserViewController.m */; };
+		2BA6A98D280B1C89004DFCC1 /* SILKUserInfoHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BA6A98C280B1C89004DFCC1 /* SILKUserInfoHeader.m */; };
+		2BA6A990280B2393004DFCC1 /* SILKUserSlideTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BA6A98F280B2393004DFCC1 /* SILKUserSlideTabBar.m */; };
+		2BA704952816FCE4003CCDBF /* SILKWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BA704942816FCE4003CCDBF /* SILKWebViewController.m */; };
+		2BA946A0281DA4A400B1C0DC /* splash_image.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 2BA9469F281DA4A400B1C0DC /* splash_image.jpeg */; };
+		2BB297022820245C00C2E41C /* SILKBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BB297012820245C00C2E41C /* SILKBaseViewController.m */; };
+		2BB2970728202AD900C2E41C /* SILKUserLoginView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BB2970628202AD900C2E41C /* SILKUserLoginView.m */; };
+		2BB297092820448200C2E41C /* user_background.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 2BB297082820448200C2E41C /* user_background.jpeg */; };
+		2BBA7AE727F19DC20098CB7A /* NSMethodSignature+SILKAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BBA7AE627F19DC20098CB7A /* NSMethodSignature+SILKAdditions.m */; };
+		2BBA7BBF27F1FE190098CB7A /* SILKFeedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BBA7BBE27F1FE190098CB7A /* SILKFeedViewController.m */; };
+		2BBA7BC327F1FEFC0098CB7A /* SILKAVPlayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BBA7BC227F1FEFC0098CB7A /* SILKAVPlayerView.m */; };
+		2BBA7BC627F1FF160098CB7A /* SILKAVPlayerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BBA7BC527F1FF160098CB7A /* SILKAVPlayerManager.m */; };
+		2BBA7C9B27F2B25B0098CB7A /* SILKFeedTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BBA7C9A27F2B25B0098CB7A /* SILKFeedTableCell.m */; };
+		2BBA7C9E27F2BCDE0098CB7A /* SILKFeedModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BBA7C9D27F2BCDE0098CB7A /* SILKFeedModel.m */; };
+		2BBA7CA327F2BE150098CB7A /* SILKVideoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BBA7CA227F2BE150098CB7A /* SILKVideoModel.m */; };
+		2BBA7CAD27F2C24B0098CB7A /* SILKCacheCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BBA7CAC27F2C24B0098CB7A /* SILKCacheCenter.m */; };
+		2BBA7E5427F376C00098CB7A /* SILKFeedManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BBA7E5327F376C00098CB7A /* SILKFeedManager.m */; };
+		2BBA7E5727F3776F0098CB7A /* SILKPhotoManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BBA7E5627F3776F0098CB7A /* SILKPhotoManager.m */; };
+		2BD0B5E6281FCE3D00F63527 /* Klee_image.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2BD0B5E5281FCE3C00F63527 /* Klee_image.jpg */; };
+		2BFA5557281647B800FCA466 /* SILKSplashPageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BFA5556281647B800FCA466 /* SILKSplashPageView.m */; };
+		2BFA555A281647C600FCA466 /* SILKSplashPageContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BFA5559281647C600FCA466 /* SILKSplashPageContainer.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2B18242227B2AF4C00826E9F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2B1823FE27B2AF4800826E9F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2B18240527B2AF4800826E9F;
+			remoteInfo = SILKDouYin;
+		};
+		2B18242C27B2AF4C00826E9F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2B1823FE27B2AF4800826E9F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2B18240527B2AF4800826E9F;
+			remoteInfo = SILKDouYin;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2B01168C281501B6005A0F5B /* SILKSplashShakeTipView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SILKSplashShakeTipView.h; sourceTree = "<group>"; };
+		2B01168D281501B6005A0F5B /* SILKSplashShakeTipView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SILKSplashShakeTipView.m; sourceTree = "<group>"; };
+		2B01168F281501C7005A0F5B /* SILKSplashShakeContainer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SILKSplashShakeContainer.h; sourceTree = "<group>"; };
+		2B011690281501C7005A0F5B /* SILKSplashShakeContainer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SILKSplashShakeContainer.m; sourceTree = "<group>"; };
+		2B011692281501DE005A0F5B /* SILKSplashMotionManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SILKSplashMotionManager.h; sourceTree = "<group>"; };
+		2B011693281501DE005A0F5B /* SILKSplashMotionManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SILKSplashMotionManager.m; sourceTree = "<group>"; };
+		2B01730B28156133005A0F5B /* shake_hand.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = shake_hand.gif; sourceTree = "<group>"; };
+		2B01730D281574E5005A0F5B /* SILKSplashView+Gesture.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SILKSplashView+Gesture.h"; sourceTree = "<group>"; };
+		2B01730E281574E5005A0F5B /* SILKSplashView+Gesture.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "SILKSplashView+Gesture.m"; sourceTree = "<group>"; };
+		2B017311281576F7005A0F5B /* SILKBaseGestureRecognizer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SILKBaseGestureRecognizer.h; sourceTree = "<group>"; };
+		2B017312281576F7005A0F5B /* SILKBaseGestureRecognizer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SILKBaseGestureRecognizer.m; sourceTree = "<group>"; };
+		2B0DBBE127FEB873006983F1 /* SILKCommerceManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SILKCommerceManager.h; sourceTree = "<group>"; };
+		2B0DBBE227FEB873006983F1 /* SILKCommerceManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SILKCommerceManager.m; sourceTree = "<group>"; };
+		2B13F52727E36C1C009BC6BF /* NSArray+SILKAdditions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSArray+SILKAdditions.h"; sourceTree = "<group>"; };
+		2B13F52827E36C1C009BC6BF /* NSArray+SILKAdditions.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSArray+SILKAdditions.m"; sourceTree = "<group>"; };
+		2B18240627B2AF4800826E9F /* SILKDouYin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SILKDouYin.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2B18240927B2AF4800826E9F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		2B18240A27B2AF4800826E9F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		2B18241327B2AF4800826E9F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2B18241527B2AF4C00826E9F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2B18241827B2AF4C00826E9F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2B18241A27B2AF4C00826E9F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2B18241B27B2AF4C00826E9F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2B18242127B2AF4C00826E9F /* SILKDouYinTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SILKDouYinTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2B18242527B2AF4C00826E9F /* SILKDouYinTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SILKDouYinTests.m; sourceTree = "<group>"; };
+		2B18242B27B2AF4C00826E9F /* SILKDouYinUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SILKDouYinUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2B18242F27B2AF4C00826E9F /* SILKDouYinUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SILKDouYinUITests.m; sourceTree = "<group>"; };
+		2B18243127B2AF4C00826E9F /* SILKDouYinUITestsLaunchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SILKDouYinUITestsLaunchTests.m; sourceTree = "<group>"; };
+		2B302BE827F030CB00C165BA /* UIView+SILKAdditions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+SILKAdditions.h"; sourceTree = "<group>"; };
+		2B302BE927F030CB00C165BA /* UIView+SILKAdditions.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+SILKAdditions.m"; sourceTree = "<group>"; };
+		2B302BF327F031FC00C165BA /* UIWindow+SILKAdditions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIWindow+SILKAdditions.h"; sourceTree = "<group>"; };
+		2B302BF427F031FC00C165BA /* UIWindow+SILKAdditions.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIWindow+SILKAdditions.m"; sourceTree = "<group>"; };
+		2B302BF627F0344D00C165BA /* UIColor+SILKAdditions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+SILKAdditions.h"; sourceTree = "<group>"; };
+		2B302BF727F0344D00C165BA /* UIColor+SILKAdditions.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+SILKAdditions.m"; sourceTree = "<group>"; };
+		2B302BFB27F034CE00C165BA /* SILKMacros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SILKMacros.h; sourceTree = "<group>"; };
+		2B302BFC27F034CE00C165BA /* SILKMacros.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SILKMacros.m; sourceTree = "<group>"; };
+		2B302BFE27F0350B00C165BA /* SILKHookUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SILKHookUtil.h; sourceTree = "<group>"; };
+		2B302BFF27F0350B00C165BA /* SILKHookUtil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SILKHookUtil.m; sourceTree = "<group>"; };
+		2B302C0127F03D7500C165BA /* NSData+SILKAdditions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSData+SILKAdditions.h"; sourceTree = "<group>"; };
+		2B302C0227F03D7500C165BA /* NSData+SILKAdditions.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSData+SILKAdditions.m"; sourceTree = "<group>"; };
+		2B302C0427F03DCC00C165BA /* NSString+SILKAdditions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+SILKAdditions.h"; sourceTree = "<group>"; };
+		2B302C0527F03DCC00C165BA /* NSString+SILKAdditions.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+SILKAdditions.m"; sourceTree = "<group>"; };
+		2B302C0C27F05DAA00C165BA /* SILKMainManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SILKMainManager.h; sourceTree = "<group>"; };
+		2B302C0D27F05DAA00C165BA /* SILKMainManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SILKMainManager.m; sourceTree = "<group>"; };
+		2B302C0F27F0669500C165BA /* SILKMainTabBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SILKMainTabBarController.h; sourceTree = "<group>"; };
+		2B302C1027F0669500C165BA /* SILKMainTabBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SILKMainTabBarController.m; sourceTree = "<group>"; };
+		2B302C1B27F07EAF00C165BA /* SILKService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SILKService.h; sourceTree = "<group>"; };
+		2B302C1C27F07FAA00C165BA /* SILKServiceCenter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SILKServiceCenter.h; sourceTree = "<group>"; };
+		2B302C1D27F07FAA00C165BA /* SILKServiceCenter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SILKServiceCenter.m; sourceTree = "<group>"; };
+		2B302C1F27F0885100C165BA /* SILKMainManagerProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SILKMainManagerProtocol.h; sourceTree = "<group>"; };
+		2B302C2127F0989200C165BA /* SILKService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SILKService.m; sourceTree = "<group>"; };
+		2B302C2B27F0CD9800C165BA /* SILKMainTabBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SILKMainTabBar.h; sourceTree = "<group>"; };
+		2B302C2C27F0CD9800C165BA /* SILKMainTabBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SILKMainTabBar.m; sourceTree = "<group>"; };
+		2B302C2E27F0CE8900C165BA /* UIImage+SILKAdditions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+SILKAdditions.h"; sourceTree = "<group>"; };
+		2B302C2F27F0CE8900C165BA /* UIImage+SILKAdditions.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+SILKAdditions.m"; sourceTree = "<group>"; };
+		2B302C3127F0D13C00C165BA /* SILKBaseKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SILKBaseKit.h; sourceTree = "<group>"; };
+		2B302C3C27F0D94000C165BA /* UIDevice+SILKAdditions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIDevice+SILKAdditions.h"; sourceTree = "<group>"; };
+		2B302C3D27F0D94000C165BA /* UIDevice+SILKAdditions.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+SILKAdditions.m"; sourceTree = "<group>"; };
+		2B302C3F27F0E28200C165BA /* UITabBar+SILKAdditions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UITabBar+SILKAdditions.h"; sourceTree = "<group>"; };
+		2B302C4027F0E28200C165BA /* UITabBar+SILKAdditions.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UITabBar+SILKAdditions.m"; sourceTree = "<group>"; };
+		2B310693280C313500768BE0 /* SILKUserCollectionCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SILKUserCollectionCell.h; sourceTree = "<group>"; };
+		2B310694280C313500768BE0 /* SILKUserCollectionCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SILKUserCollectionCell.m; sourceTree = "<group>"; };
+		2B310696280C34E800768BE0 /* SILKUserCollectionFlowLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SILKUserCollectionFlowLayout.h; sourceTree = "<group>"; };
+		2B310697280C34E800768BE0 /* SILKUserCollectionFlowLayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SILKUserCollectionFlowLayout.m; sourceTree = "<group>"; };
+		2B310699280C5ABF00768BE0 /* SILKUserManagerProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SILKUserManagerProtocol.h; sourceTree = "<group>"; };
+		2B398E9C281EB0C200CF26E7 /* SILKCacheCenterProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SILKCacheCenterProtocol.h; sourceTree = "<group>"; };
+		2B398EA0281EB68500CF26E7 /* SILKAVPlayerManagerProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SILKAVPlayerManagerProtocol.h; sourceTree = "<group>"; };
+		2B6445BF27F493720024AE5B /* SILKFeedMusicNameLabel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SILKFeedMusicNameLabel.h; sourceTree = "<group>"; };
+		2B6445C027F493720024AE5B /* SILKFeedMusicNameLabel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SILKFeedMusicNameLabel.m; sourceTree = "<group>"; };
+		2B64469227F49C9B0024AE5B /* SILKFeedMusicCDView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SILKFeedMusicCDView.h; sourceTree = "<group>"; };
+		2B64469327F49C9B0024AE5B /* SILKFeedMusicCDView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SILKFeedMusicCDView.m; sourceTree = "<group>"; };
+		2B64469527F4A2EE0024AE5B /* SILKFeedLoveView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SILKFeedLoveView.h; sourceTree = "<group>"; };
+		2B64469627F4A2EE0024AE5B /* SILKFeedLoveView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SILKFeedLoveView.m; sourceTree = "<group>"; };
+		2B64469827F4BC2F0024AE5B /* SILKFeedFocusView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SILKFeedFocusView.h; sourceTree = "<group>"; };
+		2B64469927F4BC2F0024AE5B /* SILKFeedFocusView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SILKFeedFocusView.m; sourceTree = "<group>"; };
+		2B64469C27F4C7390024AE5B /* SILKFeedSharePopView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SILKFeedSharePopView.h; sourceTree = "<group>"; };
+		2B64469D27F4C7390024AE5B /* SILKFeedSharePopView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SILKFeedSharePopView.m; sourceTree = "<group>"; };
+		2B9E337C27EF4C77008CEFE2 /* NSDictionary+SILKAdditions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+SILKAdditions.h"; sourceTree = "<group>"; };
+		2B9E337D27EF4C77008CEFE2 /* NSDictionary+SILKAdditions.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+SILKAdditions.m"; sourceTree = "<group>"; };
+		2BA26EC12813D1A800811A31 /* SILKCommerceManagerProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SILKCommerceManagerProtocol.h; sourceTree = "<group>"; };
+		2BA26EC22813D1C500811A31 /* SILKCommerceDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SILKCommerceDefine.h; sourceTree = "<group>"; };
+		2BA26F982813D37E00811A31 /* SILKSplashView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SILKSplashView.h; sourceTree = "<group>"; };
+		2BA26F992813D37E00811A31 /* SILKSplashView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SILKSplashView.m; sourceTree = "<group>"; };
+		2BA26F9E2813D66800811A31 /* SILKSplashButtonViewContainer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SILKSplashButtonViewContainer.h; sourceTree = "<group>"; };
+		2BA26F9F2813D66800811A31 /* SILKSplashButtonViewContainer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SILKSplashButtonViewContainer.m; sourceTree = "<group>"; };
+		2BA26FA72813DFF200811A31 /* SILKSplashButtonView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SILKSplashButtonView.h; sourceTree = "<group>"; };
+		2BA26FA82813DFF200811A31 /* SILKSplashButtonView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SILKSplashButtonView.m; sourceTree = "<group>"; };
+		2BA26FAA2813E96000811A31 /* SILKSplashSlideSideView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SILKSplashSlideSideView.h; sourceTree = "<group>"; };
+		2BA26FAB2813E96000811A31 /* SILKSplashSlideSideView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SILKSplashSlideSideView.m; sourceTree = "<group>"; };
+		2BA26FAD2813E97000811A31 /* SILKSplashSlideSideContainer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SILKSplashSlideSideContainer.h; sourceTree = "<group>"; };
+		2BA26FAE2813E97000811A31 /* SILKSplashSlideSideContainer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SILKSplashSlideSideContainer.m; sourceTree = "<group>"; };
+		2BA26FB02813EB3700811A31 /* SILKSplashSlideUpView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SILKSplashSlideUpView.h; sourceTree = "<group>"; };
+		2BA26FB12813EB3700811A31 /* SILKSplashSlideUpView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SILKSplashSlideUpView.m; sourceTree = "<group>"; };
+		2BA26FB32813EB4900811A31 /* SILKSplashSlideUpContainer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SILKSplashSlideUpContainer.h; sourceTree = "<group>"; };
+		2BA26FB42813EB4900811A31 /* SILKSplashSlideUpContainer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SILKSplashSlideUpContainer.m; sourceTree = "<group>"; };
+		2BA26FB62813EBC100811A31 /* SILKSplashSlideUpButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SILKSplashSlideUpButton.h; sourceTree = "<group>"; };
+		2BA26FB72813EBC200811A31 /* SILKSplashSlideUpButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SILKSplashSlideUpButton.m; sourceTree = "<group>"; };
+		2BA26FB92813F00200811A31 /* SILKSplashSkipView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SILKSplashSkipView.h; sourceTree = "<group>"; };
+		2BA26FBA2813F00200811A31 /* SILKSplashSkipView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SILKSplashSkipView.m; sourceTree = "<group>"; };
+		2BA26FBF2814262700811A31 /* SILKSplashGoButtonView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SILKSplashGoButtonView.h; sourceTree = "<group>"; };
+		2BA26FC02814262700811A31 /* SILKSplashGoButtonView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SILKSplashGoButtonView.m; sourceTree = "<group>"; };
+		2BA26FC22814263B00811A31 /* SILKSplashGoButtonContainer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SILKSplashGoButtonContainer.h; sourceTree = "<group>"; };
+		2BA26FC32814263B00811A31 /* SILKSplashGoButtonContainer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SILKSplashGoButtonContainer.m; sourceTree = "<group>"; };
+		2BA6A980280B1301004DFCC1 /* SILKUserManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SILKUserManager.h; sourceTree = "<group>"; };
+		2BA6A981280B1301004DFCC1 /* SILKUserManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SILKUserManager.m; sourceTree = "<group>"; };
+		2BA6A983280B1358004DFCC1 /* SILKUserModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SILKUserModel.h; sourceTree = "<group>"; };
+		2BA6A984280B1358004DFCC1 /* SILKUserModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SILKUserModel.m; sourceTree = "<group>"; };
+		2BA6A986280B15C7004DFCC1 /* user.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = user.json; sourceTree = "<group>"; };
+		2BA6A988280B17F6004DFCC1 /* SILKUserViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SILKUserViewController.h; sourceTree = "<group>"; };
+		2BA6A989280B17F6004DFCC1 /* SILKUserViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SILKUserViewController.m; sourceTree = "<group>"; };
+		2BA6A98B280B1C89004DFCC1 /* SILKUserInfoHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SILKUserInfoHeader.h; sourceTree = "<group>"; };
+		2BA6A98C280B1C89004DFCC1 /* SILKUserInfoHeader.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SILKUserInfoHeader.m; sourceTree = "<group>"; };
+		2BA6A98E280B2393004DFCC1 /* SILKUserSlideTabBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SILKUserSlideTabBar.h; sourceTree = "<group>"; };
+		2BA6A98F280B2393004DFCC1 /* SILKUserSlideTabBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SILKUserSlideTabBar.m; sourceTree = "<group>"; };
+		2BA6A991280B24BD004DFCC1 /* SILKUserDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SILKUserDefine.h; sourceTree = "<group>"; };
+		2BA704922816FBB2003CCDBF /* SILKSplashDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SILKSplashDelegate.h; sourceTree = "<group>"; };
+		2BA704932816FCE4003CCDBF /* SILKWebViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SILKWebViewController.h; sourceTree = "<group>"; };
+		2BA704942816FCE4003CCDBF /* SILKWebViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SILKWebViewController.m; sourceTree = "<group>"; };
+		2BA9469F281DA4A400B1C0DC /* splash_image.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = splash_image.jpeg; sourceTree = "<group>"; };
+		2BB297002820245C00C2E41C /* SILKBaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SILKBaseViewController.h; sourceTree = "<group>"; };
+		2BB297012820245C00C2E41C /* SILKBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SILKBaseViewController.m; sourceTree = "<group>"; };
+		2BB2970528202AD900C2E41C /* SILKUserLoginView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SILKUserLoginView.h; sourceTree = "<group>"; };
+		2BB2970628202AD900C2E41C /* SILKUserLoginView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SILKUserLoginView.m; sourceTree = "<group>"; };
+		2BB297082820448200C2E41C /* user_background.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = user_background.jpeg; sourceTree = "<group>"; };
+		2BBA7AE527F19DC20098CB7A /* NSMethodSignature+SILKAdditions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSMethodSignature+SILKAdditions.h"; sourceTree = "<group>"; };
+		2BBA7AE627F19DC20098CB7A /* NSMethodSignature+SILKAdditions.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSMethodSignature+SILKAdditions.m"; sourceTree = "<group>"; };
+		2BBA7BBD27F1FE190098CB7A /* SILKFeedViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SILKFeedViewController.h; sourceTree = "<group>"; };
+		2BBA7BBE27F1FE190098CB7A /* SILKFeedViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SILKFeedViewController.m; sourceTree = "<group>"; };
+		2BBA7BC127F1FEFB0098CB7A /* SILKAVPlayerView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SILKAVPlayerView.h; sourceTree = "<group>"; };
+		2BBA7BC227F1FEFC0098CB7A /* SILKAVPlayerView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SILKAVPlayerView.m; sourceTree = "<group>"; };
+		2BBA7BC427F1FF160098CB7A /* SILKAVPlayerManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SILKAVPlayerManager.h; sourceTree = "<group>"; };
+		2BBA7BC527F1FF160098CB7A /* SILKAVPlayerManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SILKAVPlayerManager.m; sourceTree = "<group>"; };
+		2BBA7C9727F2AFB60098CB7A /* SILKFeedDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SILKFeedDefine.h; sourceTree = "<group>"; };
+		2BBA7C9827F2B05B0098CB7A /* SILKMainDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SILKMainDefine.h; sourceTree = "<group>"; };
+		2BBA7C9927F2B25B0098CB7A /* SILKFeedTableCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SILKFeedTableCell.h; sourceTree = "<group>"; };
+		2BBA7C9A27F2B25B0098CB7A /* SILKFeedTableCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SILKFeedTableCell.m; sourceTree = "<group>"; };
+		2BBA7C9C27F2BCDE0098CB7A /* SILKFeedModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SILKFeedModel.h; sourceTree = "<group>"; };
+		2BBA7C9D27F2BCDE0098CB7A /* SILKFeedModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SILKFeedModel.m; sourceTree = "<group>"; };
+		2BBA7CA127F2BE150098CB7A /* SILKVideoModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SILKVideoModel.h; sourceTree = "<group>"; };
+		2BBA7CA227F2BE150098CB7A /* SILKVideoModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SILKVideoModel.m; sourceTree = "<group>"; };
+		2BBA7CAB27F2C24B0098CB7A /* SILKCacheCenter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SILKCacheCenter.h; sourceTree = "<group>"; };
+		2BBA7CAC27F2C24B0098CB7A /* SILKCacheCenter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SILKCacheCenter.m; sourceTree = "<group>"; };
+		2BBA7E5227F376C00098CB7A /* SILKFeedManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SILKFeedManager.h; sourceTree = "<group>"; };
+		2BBA7E5327F376C00098CB7A /* SILKFeedManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SILKFeedManager.m; sourceTree = "<group>"; };
+		2BBA7E5527F3776F0098CB7A /* SILKPhotoManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SILKPhotoManager.h; sourceTree = "<group>"; };
+		2BBA7E5627F3776F0098CB7A /* SILKPhotoManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SILKPhotoManager.m; sourceTree = "<group>"; };
+		2BD0B5E3281F923400F63527 /* SILKPhotoManagerProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SILKPhotoManagerProtocol.h; sourceTree = "<group>"; };
+		2BD0B5E4281FC3EE00F63527 /* SILKFeedManagerProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SILKFeedManagerProtocol.h; sourceTree = "<group>"; };
+		2BD0B5E5281FCE3C00F63527 /* Klee_image.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Klee_image.jpg; sourceTree = "<group>"; };
+		2BFA5555281647B800FCA466 /* SILKSplashPageView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SILKSplashPageView.h; sourceTree = "<group>"; };
+		2BFA5556281647B800FCA466 /* SILKSplashPageView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SILKSplashPageView.m; sourceTree = "<group>"; };
+		2BFA5558281647C600FCA466 /* SILKSplashPageContainer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SILKSplashPageContainer.h; sourceTree = "<group>"; };
+		2BFA5559281647C600FCA466 /* SILKSplashPageContainer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SILKSplashPageContainer.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2B18240327B2AF4800826E9F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2B18241E27B2AF4C00826E9F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2B18242827B2AF4C00826E9F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2B01168B28150199005A0F5B /* Shake */ = {
+			isa = PBXGroup;
+			children = (
+				2B01168C281501B6005A0F5B /* SILKSplashShakeTipView.h */,
+				2B01168D281501B6005A0F5B /* SILKSplashShakeTipView.m */,
+				2B01168F281501C7005A0F5B /* SILKSplashShakeContainer.h */,
+				2B011690281501C7005A0F5B /* SILKSplashShakeContainer.m */,
+				2B011692281501DE005A0F5B /* SILKSplashMotionManager.h */,
+				2B011693281501DE005A0F5B /* SILKSplashMotionManager.m */,
+			);
+			path = Shake;
+			sourceTree = "<group>";
+		};
+		2B01731028157677005A0F5B /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				2B017311281576F7005A0F5B /* SILKBaseGestureRecognizer.h */,
+				2B017312281576F7005A0F5B /* SILKBaseGestureRecognizer.m */,
+				2BB297002820245C00C2E41C /* SILKBaseViewController.h */,
+				2BB297012820245C00C2E41C /* SILKBaseViewController.m */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		2B0DBBE027FEB85B006983F1 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				2B0DBBE127FEB873006983F1 /* SILKCommerceManager.h */,
+				2B0DBBE227FEB873006983F1 /* SILKCommerceManager.m */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		2B0DBCB427FEC9A6006983F1 /* Interface */ = {
+			isa = PBXGroup;
+			children = (
+				2B302C1B27F07EAF00C165BA /* SILKService.h */,
+				2B302C2127F0989200C165BA /* SILKService.m */,
+			);
+			path = Interface;
+			sourceTree = "<group>";
+		};
+		2B0DBCB527FEC9B0006983F1 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				2B302C1C27F07FAA00C165BA /* SILKServiceCenter.h */,
+				2B302C1D27F07FAA00C165BA /* SILKServiceCenter.m */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		2B13EF5127E36AEA009BC6BF /* SILKBaseKit */ = {
+			isa = PBXGroup;
+			children = (
+				2B302C3127F0D13C00C165BA /* SILKBaseKit.h */,
+				2B01731028157677005A0F5B /* Base */,
+				2B302BFA27F034A500C165BA /* Util */,
+				2B302BF927F0348A00C165BA /* Category */,
+			);
+			path = SILKBaseKit;
+			sourceTree = "<group>";
+		};
+		2B1823FD27B2AF4800826E9F = {
+			isa = PBXGroup;
+			children = (
+				2B18240827B2AF4800826E9F /* SILKDouYin */,
+				2B18242427B2AF4C00826E9F /* SILKDouYinTests */,
+				2B18242E27B2AF4C00826E9F /* SILKDouYinUITests */,
+				2B18240727B2AF4800826E9F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2B18240727B2AF4800826E9F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2B18240627B2AF4800826E9F /* SILKDouYin.app */,
+				2B18242127B2AF4C00826E9F /* SILKDouYinTests.xctest */,
+				2B18242B27B2AF4C00826E9F /* SILKDouYinUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2B18240827B2AF4800826E9F /* SILKDouYin */ = {
+			isa = PBXGroup;
+			children = (
+				2B302C0727F03E6A00C165BA /* SILKResource */,
+				2B18240927B2AF4800826E9F /* AppDelegate.h */,
+				2B18240A27B2AF4800826E9F /* AppDelegate.m */,
+				2B18241A27B2AF4C00826E9F /* Info.plist */,
+				2B18241727B2AF4C00826E9F /* LaunchScreen.storyboard */,
+				2B18241B27B2AF4C00826E9F /* main.m */,
+				2B18241227B2AF4800826E9F /* Main.storyboard */,
+				2B39E3BB27B3B9CC008F5BFB /* SIKLAccountKit */,
+				2B39E3BD27B3B9EE008F5BFB /* SIKLMain */,
+				2B39E3BA27B3B9BC008F5BFB /* SILKFeed */,
+				2B39E3BC27B3B9DF008F5BFB /* SILKUser */,
+				2B39E3B627B3B918008F5BFB /* SILKCommerce */,
+				2B284EEC27F8524200B1A142 /* SILKPhoto */,
+				2BBA7C9F27F2BD2E0098CB7A /* SILKPlayer */,
+				2B13EF5127E36AEA009BC6BF /* SILKBaseKit */,
+				2BBA7CA627F2C1F30098CB7A /* SIKLCacheCenter */,
+				2B39E3B827B3B99E008F5BFB /* SILKServiceCenter */,
+			);
+			path = SILKDouYin;
+			sourceTree = "<group>";
+		};
+		2B18242427B2AF4C00826E9F /* SILKDouYinTests */ = {
+			isa = PBXGroup;
+			children = (
+				2B18242527B2AF4C00826E9F /* SILKDouYinTests.m */,
+			);
+			path = SILKDouYinTests;
+			sourceTree = "<group>";
+		};
+		2B18242E27B2AF4C00826E9F /* SILKDouYinUITests */ = {
+			isa = PBXGroup;
+			children = (
+				2B18242F27B2AF4C00826E9F /* SILKDouYinUITests.m */,
+				2B18243127B2AF4C00826E9F /* SILKDouYinUITestsLaunchTests.m */,
+			);
+			path = SILKDouYinUITests;
+			sourceTree = "<group>";
+		};
+		2B284EEC27F8524200B1A142 /* SILKPhoto */ = {
+			isa = PBXGroup;
+			children = (
+				2BD0B5E2281F91DE00F63527 /* Interface */,
+				2BD0B5DF281F91BC00F63527 /* Impl */,
+			);
+			path = SILKPhoto;
+			sourceTree = "<group>";
+		};
+		2B302BF927F0348A00C165BA /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				2B302C3327F0D25500C165BA /* UIKit */,
+				2B302C3227F0D24C00C165BA /* Foundation */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		2B302BFA27F034A500C165BA /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				2B302BFB27F034CE00C165BA /* SILKMacros.h */,
+				2B302BFC27F034CE00C165BA /* SILKMacros.m */,
+				2B302BFE27F0350B00C165BA /* SILKHookUtil.h */,
+				2B302BFF27F0350B00C165BA /* SILKHookUtil.m */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		2B302C0727F03E6A00C165BA /* SILKResource */ = {
+			isa = PBXGroup;
+			children = (
+				2BB297082820448200C2E41C /* user_background.jpeg */,
+				2BD0B5E5281FCE3C00F63527 /* Klee_image.jpg */,
+				2BA9469F281DA4A400B1C0DC /* splash_image.jpeg */,
+				2B01730B28156133005A0F5B /* shake_hand.gif */,
+				2BA6A986280B15C7004DFCC1 /* user.json */,
+				2B18241527B2AF4C00826E9F /* Assets.xcassets */,
+			);
+			path = SILKResource;
+			sourceTree = "<group>";
+		};
+		2B302C0827F051DB00C165BA /* Impl */ = {
+			isa = PBXGroup;
+			children = (
+				2B302C0B27F05D9100C165BA /* Core */,
+				2B302C0A27F052E000C165BA /* View */,
+			);
+			path = Impl;
+			sourceTree = "<group>";
+		};
+		2B302C0927F052BD00C165BA /* Interface */ = {
+			isa = PBXGroup;
+			children = (
+				2B302C1F27F0885100C165BA /* SILKMainManagerProtocol.h */,
+				2BBA7C9827F2B05B0098CB7A /* SILKMainDefine.h */,
+			);
+			path = Interface;
+			sourceTree = "<group>";
+		};
+		2B302C0A27F052E000C165BA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2B302C0F27F0669500C165BA /* SILKMainTabBarController.h */,
+				2B302C1027F0669500C165BA /* SILKMainTabBarController.m */,
+				2B302C2B27F0CD9800C165BA /* SILKMainTabBar.h */,
+				2B302C2C27F0CD9800C165BA /* SILKMainTabBar.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2B302C0B27F05D9100C165BA /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				2B302C0C27F05DAA00C165BA /* SILKMainManager.h */,
+				2B302C0D27F05DAA00C165BA /* SILKMainManager.m */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		2B302C3227F0D24C00C165BA /* Foundation */ = {
+			isa = PBXGroup;
+			children = (
+				2B13F52727E36C1C009BC6BF /* NSArray+SILKAdditions.h */,
+				2B13F52827E36C1C009BC6BF /* NSArray+SILKAdditions.m */,
+				2B9E337C27EF4C77008CEFE2 /* NSDictionary+SILKAdditions.h */,
+				2B9E337D27EF4C77008CEFE2 /* NSDictionary+SILKAdditions.m */,
+				2B302C0127F03D7500C165BA /* NSData+SILKAdditions.h */,
+				2B302C0227F03D7500C165BA /* NSData+SILKAdditions.m */,
+				2B302C0427F03DCC00C165BA /* NSString+SILKAdditions.h */,
+				2B302C0527F03DCC00C165BA /* NSString+SILKAdditions.m */,
+			);
+			path = Foundation;
+			sourceTree = "<group>";
+		};
+		2B302C3327F0D25500C165BA /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				2B302BE827F030CB00C165BA /* UIView+SILKAdditions.h */,
+				2B302BE927F030CB00C165BA /* UIView+SILKAdditions.m */,
+				2B302BF327F031FC00C165BA /* UIWindow+SILKAdditions.h */,
+				2B302BF427F031FC00C165BA /* UIWindow+SILKAdditions.m */,
+				2B302BF627F0344D00C165BA /* UIColor+SILKAdditions.h */,
+				2B302BF727F0344D00C165BA /* UIColor+SILKAdditions.m */,
+				2B302C2E27F0CE8900C165BA /* UIImage+SILKAdditions.h */,
+				2B302C2F27F0CE8900C165BA /* UIImage+SILKAdditions.m */,
+				2B302C3C27F0D94000C165BA /* UIDevice+SILKAdditions.h */,
+				2B302C3D27F0D94000C165BA /* UIDevice+SILKAdditions.m */,
+				2B302C3F27F0E28200C165BA /* UITabBar+SILKAdditions.h */,
+				2B302C4027F0E28200C165BA /* UITabBar+SILKAdditions.m */,
+				2BBA7AE527F19DC20098CB7A /* NSMethodSignature+SILKAdditions.h */,
+				2BBA7AE627F19DC20098CB7A /* NSMethodSignature+SILKAdditions.m */,
+			);
+			path = UIKit;
+			sourceTree = "<group>";
+		};
+		2B398E9B281EB09F00CF26E7 /* interface */ = {
+			isa = PBXGroup;
+			children = (
+				2B398E9C281EB0C200CF26E7 /* SILKCacheCenterProtocol.h */,
+			);
+			path = interface;
+			sourceTree = "<group>";
+		};
+		2B398E9D281EB63200CF26E7 /* Interface */ = {
+			isa = PBXGroup;
+			children = (
+				2B398EA0281EB68500CF26E7 /* SILKAVPlayerManagerProtocol.h */,
+				2BBA7CA027F2BE030098CB7A /* Model */,
+				2B398EA2281EBB1600CF26E7 /* View */,
+			);
+			path = Interface;
+			sourceTree = "<group>";
+		};
+		2B398E9E281EB63F00CF26E7 /* Impl */ = {
+			isa = PBXGroup;
+			children = (
+				2B0DBCB527FEC9B0006983F1 /* Core */,
+			);
+			path = Impl;
+			sourceTree = "<group>";
+		};
+		2B398E9F281EB64F00CF26E7 /* Imple */ = {
+			isa = PBXGroup;
+			children = (
+				2BBA7BC027F1FE910098CB7A /* View */,
+				2BBA7CA427F2BE1D0098CB7A /* Core */,
+			);
+			path = Imple;
+			sourceTree = "<group>";
+		};
+		2B398EA2281EBB1600CF26E7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2BBA7BC127F1FEFB0098CB7A /* SILKAVPlayerView.h */,
+				2BBA7BC227F1FEFC0098CB7A /* SILKAVPlayerView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2B39E3B627B3B918008F5BFB /* SILKCommerce */ = {
+			isa = PBXGroup;
+			children = (
+				2BA26EBF2813D17400811A31 /* Interface */,
+				2BA26EC02813D17B00811A31 /* Impl */,
+			);
+			path = SILKCommerce;
+			sourceTree = "<group>";
+		};
+		2B39E3B827B3B99E008F5BFB /* SILKServiceCenter */ = {
+			isa = PBXGroup;
+			children = (
+				2B0DBCB427FEC9A6006983F1 /* Interface */,
+				2B398E9E281EB63F00CF26E7 /* Impl */,
+			);
+			path = SILKServiceCenter;
+			sourceTree = "<group>";
+		};
+		2B39E3BA27B3B9BC008F5BFB /* SILKFeed */ = {
+			isa = PBXGroup;
+			children = (
+				2BBA7AE827F1EDA50098CB7A /* Interface */,
+				2BBA7AE927F1EDB00098CB7A /* Impl */,
+			);
+			path = SILKFeed;
+			sourceTree = "<group>";
+		};
+		2B39E3BB27B3B9CC008F5BFB /* SIKLAccountKit */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = SIKLAccountKit;
+			sourceTree = "<group>";
+		};
+		2B39E3BC27B3B9DF008F5BFB /* SILKUser */ = {
+			isa = PBXGroup;
+			children = (
+				2BA6A97B280B1250004DFCC1 /* Interface */,
+				2BA6A97D280B126C004DFCC1 /* Impl */,
+			);
+			path = SILKUser;
+			sourceTree = "<group>";
+		};
+		2B39E3BD27B3B9EE008F5BFB /* SIKLMain */ = {
+			isa = PBXGroup;
+			children = (
+				2B302C0927F052BD00C165BA /* Interface */,
+				2B302C0827F051DB00C165BA /* Impl */,
+			);
+			path = SIKLMain;
+			sourceTree = "<group>";
+		};
+		2B6445BA27F491670024AE5B /* BottomElement */ = {
+			isa = PBXGroup;
+			children = (
+				2B6445BF27F493720024AE5B /* SILKFeedMusicNameLabel.h */,
+				2B6445C027F493720024AE5B /* SILKFeedMusicNameLabel.m */,
+			);
+			path = BottomElement;
+			sourceTree = "<group>";
+		};
+		2B6445BE27F493400024AE5B /* RightElement */ = {
+			isa = PBXGroup;
+			children = (
+				2B64469227F49C9B0024AE5B /* SILKFeedMusicCDView.h */,
+				2B64469327F49C9B0024AE5B /* SILKFeedMusicCDView.m */,
+				2B64469527F4A2EE0024AE5B /* SILKFeedLoveView.h */,
+				2B64469627F4A2EE0024AE5B /* SILKFeedLoveView.m */,
+				2B64469827F4BC2F0024AE5B /* SILKFeedFocusView.h */,
+				2B64469927F4BC2F0024AE5B /* SILKFeedFocusView.m */,
+			);
+			path = RightElement;
+			sourceTree = "<group>";
+		};
+		2B64469B27F4C6BF0024AE5B /* PopView */ = {
+			isa = PBXGroup;
+			children = (
+				2B64469C27F4C7390024AE5B /* SILKFeedSharePopView.h */,
+				2B64469D27F4C7390024AE5B /* SILKFeedSharePopView.m */,
+			);
+			path = PopView;
+			sourceTree = "<group>";
+		};
+		2BA26EBF2813D17400811A31 /* Interface */ = {
+			isa = PBXGroup;
+			children = (
+				2BA26EC12813D1A800811A31 /* SILKCommerceManagerProtocol.h */,
+				2BA26EC22813D1C500811A31 /* SILKCommerceDefine.h */,
+			);
+			path = Interface;
+			sourceTree = "<group>";
+		};
+		2BA26EC02813D17B00811A31 /* Impl */ = {
+			isa = PBXGroup;
+			children = (
+				2BA26F9D2813D43300811A31 /* SILKCommerceSplash */,
+			);
+			path = Impl;
+			sourceTree = "<group>";
+		};
+		2BA26EC32813D32F00811A31 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2BA704922816FBB2003CCDBF /* SILKSplashDelegate.h */,
+				2BA26F982813D37E00811A31 /* SILKSplashView.h */,
+				2BA26F992813D37E00811A31 /* SILKSplashView.m */,
+				2B01730D281574E5005A0F5B /* SILKSplashView+Gesture.h */,
+				2B01730E281574E5005A0F5B /* SILKSplashView+Gesture.m */,
+				2BA704932816FCE4003CCDBF /* SILKWebViewController.h */,
+				2BA704942816FCE4003CCDBF /* SILKWebViewController.m */,
+				2BA26F9C2813D3E600811A31 /* SILKSplashComplianceView */,
+				2BA26F9B2813D3D500811A31 /* SILKSplashCommonElement */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2BA26F9B2813D3D500811A31 /* SILKSplashCommonElement */ = {
+			isa = PBXGroup;
+			children = (
+				2BA26FB92813F00200811A31 /* SILKSplashSkipView.h */,
+				2BA26FBA2813F00200811A31 /* SILKSplashSkipView.m */,
+			);
+			path = SILKSplashCommonElement;
+			sourceTree = "<group>";
+		};
+		2BA26F9C2813D3E600811A31 /* SILKSplashComplianceView */ = {
+			isa = PBXGroup;
+			children = (
+				2BA26FA12813D67E00811A31 /* ButtonView */,
+				2BA26FA42813D69400811A31 /* SlideUp */,
+				2BA26FA32813D68C00811A31 /* SlideSide */,
+				2BA26FA52813D6B100811A31 /* GoButton */,
+				2B01168B28150199005A0F5B /* Shake */,
+				2BFA55542816478D00FCA466 /* PageView */,
+			);
+			path = SILKSplashComplianceView;
+			sourceTree = "<group>";
+		};
+		2BA26F9D2813D43300811A31 /* SILKCommerceSplash */ = {
+			isa = PBXGroup;
+			children = (
+				2B0DBBE027FEB85B006983F1 /* Core */,
+				2BA26EC32813D32F00811A31 /* View */,
+			);
+			path = SILKCommerceSplash;
+			sourceTree = "<group>";
+		};
+		2BA26FA12813D67E00811A31 /* ButtonView */ = {
+			isa = PBXGroup;
+			children = (
+				2BA26F9E2813D66800811A31 /* SILKSplashButtonViewContainer.h */,
+				2BA26F9F2813D66800811A31 /* SILKSplashButtonViewContainer.m */,
+				2BA26FA72813DFF200811A31 /* SILKSplashButtonView.h */,
+				2BA26FA82813DFF200811A31 /* SILKSplashButtonView.m */,
+			);
+			path = ButtonView;
+			sourceTree = "<group>";
+		};
+		2BA26FA32813D68C00811A31 /* SlideSide */ = {
+			isa = PBXGroup;
+			children = (
+				2BA26FAA2813E96000811A31 /* SILKSplashSlideSideView.h */,
+				2BA26FAB2813E96000811A31 /* SILKSplashSlideSideView.m */,
+				2BA26FAD2813E97000811A31 /* SILKSplashSlideSideContainer.h */,
+				2BA26FAE2813E97000811A31 /* SILKSplashSlideSideContainer.m */,
+			);
+			path = SlideSide;
+			sourceTree = "<group>";
+		};
+		2BA26FA42813D69400811A31 /* SlideUp */ = {
+			isa = PBXGroup;
+			children = (
+				2BA26FB02813EB3700811A31 /* SILKSplashSlideUpView.h */,
+				2BA26FB12813EB3700811A31 /* SILKSplashSlideUpView.m */,
+				2BA26FB62813EBC100811A31 /* SILKSplashSlideUpButton.h */,
+				2BA26FB72813EBC200811A31 /* SILKSplashSlideUpButton.m */,
+				2BA26FB32813EB4900811A31 /* SILKSplashSlideUpContainer.h */,
+				2BA26FB42813EB4900811A31 /* SILKSplashSlideUpContainer.m */,
+			);
+			path = SlideUp;
+			sourceTree = "<group>";
+		};
+		2BA26FA52813D6B100811A31 /* GoButton */ = {
+			isa = PBXGroup;
+			children = (
+				2BA26FBF2814262700811A31 /* SILKSplashGoButtonView.h */,
+				2BA26FC02814262700811A31 /* SILKSplashGoButtonView.m */,
+				2BA26FC22814263B00811A31 /* SILKSplashGoButtonContainer.h */,
+				2BA26FC32814263B00811A31 /* SILKSplashGoButtonContainer.m */,
+			);
+			path = GoButton;
+			sourceTree = "<group>";
+		};
+		2BA6A97B280B1250004DFCC1 /* Interface */ = {
+			isa = PBXGroup;
+			children = (
+				2B310699280C5ABF00768BE0 /* SILKUserManagerProtocol.h */,
+				2BA6A991280B24BD004DFCC1 /* SILKUserDefine.h */,
+				2BA6A97C280B125E004DFCC1 /* Model */,
+			);
+			path = Interface;
+			sourceTree = "<group>";
+		};
+		2BA6A97C280B125E004DFCC1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2BA6A983280B1358004DFCC1 /* SILKUserModel.h */,
+				2BA6A984280B1358004DFCC1 /* SILKUserModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2BA6A97D280B126C004DFCC1 /* Impl */ = {
+			isa = PBXGroup;
+			children = (
+				2BA6A97E280B1272004DFCC1 /* Core */,
+				2BA6A97F280B1279004DFCC1 /* View */,
+			);
+			path = Impl;
+			sourceTree = "<group>";
+		};
+		2BA6A97E280B1272004DFCC1 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				2BA6A980280B1301004DFCC1 /* SILKUserManager.h */,
+				2BA6A981280B1301004DFCC1 /* SILKUserManager.m */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		2BA6A97F280B1279004DFCC1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2BB2970428202AC100C2E41C /* Login */,
+				2BB2970328202AA900C2E41C /* User */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2BB2970328202AA900C2E41C /* User */ = {
+			isa = PBXGroup;
+			children = (
+				2BA6A988280B17F6004DFCC1 /* SILKUserViewController.h */,
+				2BA6A989280B17F6004DFCC1 /* SILKUserViewController.m */,
+				2BA6A98B280B1C89004DFCC1 /* SILKUserInfoHeader.h */,
+				2BA6A98C280B1C89004DFCC1 /* SILKUserInfoHeader.m */,
+				2BA6A98E280B2393004DFCC1 /* SILKUserSlideTabBar.h */,
+				2BA6A98F280B2393004DFCC1 /* SILKUserSlideTabBar.m */,
+				2B310693280C313500768BE0 /* SILKUserCollectionCell.h */,
+				2B310694280C313500768BE0 /* SILKUserCollectionCell.m */,
+				2B310696280C34E800768BE0 /* SILKUserCollectionFlowLayout.h */,
+				2B310697280C34E800768BE0 /* SILKUserCollectionFlowLayout.m */,
+			);
+			path = User;
+			sourceTree = "<group>";
+		};
+		2BB2970428202AC100C2E41C /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				2BB2970528202AD900C2E41C /* SILKUserLoginView.h */,
+				2BB2970628202AD900C2E41C /* SILKUserLoginView.m */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		2BBA7AE827F1EDA50098CB7A /* Interface */ = {
+			isa = PBXGroup;
+			children = (
+				2BD0B5E4281FC3EE00F63527 /* SILKFeedManagerProtocol.h */,
+				2BBA7C9727F2AFB60098CB7A /* SILKFeedDefine.h */,
+				2BBA7BBB27F1EE160098CB7A /* Model */,
+			);
+			path = Interface;
+			sourceTree = "<group>";
+		};
+		2BBA7AE927F1EDB00098CB7A /* Impl */ = {
+			isa = PBXGroup;
+			children = (
+				2BBA7BBC27F1EE330098CB7A /* Core */,
+				2BBA7AEA27F1EDD20098CB7A /* View */,
+			);
+			path = Impl;
+			sourceTree = "<group>";
+		};
+		2BBA7AEA27F1EDD20098CB7A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2BBA7BBD27F1FE190098CB7A /* SILKFeedViewController.h */,
+				2BBA7BBE27F1FE190098CB7A /* SILKFeedViewController.m */,
+				2BBA7C9927F2B25B0098CB7A /* SILKFeedTableCell.h */,
+				2BBA7C9A27F2B25B0098CB7A /* SILKFeedTableCell.m */,
+				2B6445BE27F493400024AE5B /* RightElement */,
+				2B6445BA27F491670024AE5B /* BottomElement */,
+				2B64469B27F4C6BF0024AE5B /* PopView */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2BBA7BBB27F1EE160098CB7A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2BBA7C9C27F2BCDE0098CB7A /* SILKFeedModel.h */,
+				2BBA7C9D27F2BCDE0098CB7A /* SILKFeedModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2BBA7BBC27F1EE330098CB7A /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				2BBA7E5227F376C00098CB7A /* SILKFeedManager.h */,
+				2BBA7E5327F376C00098CB7A /* SILKFeedManager.m */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		2BBA7BC027F1FE910098CB7A /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2BBA7C9F27F2BD2E0098CB7A /* SILKPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				2B398E9D281EB63200CF26E7 /* Interface */,
+				2B398E9F281EB64F00CF26E7 /* Imple */,
+			);
+			path = SILKPlayer;
+			sourceTree = "<group>";
+		};
+		2BBA7CA027F2BE030098CB7A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2BBA7CA127F2BE150098CB7A /* SILKVideoModel.h */,
+				2BBA7CA227F2BE150098CB7A /* SILKVideoModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2BBA7CA427F2BE1D0098CB7A /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				2BBA7BC427F1FF160098CB7A /* SILKAVPlayerManager.h */,
+				2BBA7BC527F1FF160098CB7A /* SILKAVPlayerManager.m */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		2BBA7CA627F2C1F30098CB7A /* SIKLCacheCenter */ = {
+			isa = PBXGroup;
+			children = (
+				2B398E9B281EB09F00CF26E7 /* interface */,
+				2BD0B5E0281F91CC00F63527 /* Impl */,
+			);
+			path = SIKLCacheCenter;
+			sourceTree = "<group>";
+		};
+		2BBA7CA727F2C20E0098CB7A /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				2BBA7CAB27F2C24B0098CB7A /* SILKCacheCenter.h */,
+				2BBA7CAC27F2C24B0098CB7A /* SILKCacheCenter.m */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		2BD0B5DF281F91BC00F63527 /* Impl */ = {
+			isa = PBXGroup;
+			children = (
+				2BD0B5E1281F91D800F63527 /* Core */,
+			);
+			path = Impl;
+			sourceTree = "<group>";
+		};
+		2BD0B5E0281F91CC00F63527 /* Impl */ = {
+			isa = PBXGroup;
+			children = (
+				2BBA7CA727F2C20E0098CB7A /* Core */,
+			);
+			path = Impl;
+			sourceTree = "<group>";
+		};
+		2BD0B5E1281F91D800F63527 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				2BBA7E5527F3776F0098CB7A /* SILKPhotoManager.h */,
+				2BBA7E5627F3776F0098CB7A /* SILKPhotoManager.m */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		2BD0B5E2281F91DE00F63527 /* Interface */ = {
+			isa = PBXGroup;
+			children = (
+				2BD0B5E3281F923400F63527 /* SILKPhotoManagerProtocol.h */,
+			);
+			path = Interface;
+			sourceTree = "<group>";
+		};
+		2BFA55542816478D00FCA466 /* PageView */ = {
+			isa = PBXGroup;
+			children = (
+				2BFA5555281647B800FCA466 /* SILKSplashPageView.h */,
+				2BFA5556281647B800FCA466 /* SILKSplashPageView.m */,
+				2BFA5558281647C600FCA466 /* SILKSplashPageContainer.h */,
+				2BFA5559281647C600FCA466 /* SILKSplashPageContainer.m */,
+			);
+			path = PageView;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2B18240527B2AF4800826E9F /* SILKDouYin */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2B18243527B2AF4C00826E9F /* Build configuration list for PBXNativeTarget "SILKDouYin" */;
+			buildPhases = (
+				2B18240227B2AF4800826E9F /* Sources */,
+				2B18240327B2AF4800826E9F /* Frameworks */,
+				2B18240427B2AF4800826E9F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SILKDouYin;
+			productName = SILKDouYin;
+			productReference = 2B18240627B2AF4800826E9F /* SILKDouYin.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2B18242027B2AF4C00826E9F /* SILKDouYinTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2B18243827B2AF4C00826E9F /* Build configuration list for PBXNativeTarget "SILKDouYinTests" */;
+			buildPhases = (
+				2B18241D27B2AF4C00826E9F /* Sources */,
+				2B18241E27B2AF4C00826E9F /* Frameworks */,
+				2B18241F27B2AF4C00826E9F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2B18242327B2AF4C00826E9F /* PBXTargetDependency */,
+			);
+			name = SILKDouYinTests;
+			productName = SILKDouYinTests;
+			productReference = 2B18242127B2AF4C00826E9F /* SILKDouYinTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		2B18242A27B2AF4C00826E9F /* SILKDouYinUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2B18243B27B2AF4C00826E9F /* Build configuration list for PBXNativeTarget "SILKDouYinUITests" */;
+			buildPhases = (
+				2B18242727B2AF4C00826E9F /* Sources */,
+				2B18242827B2AF4C00826E9F /* Frameworks */,
+				2B18242927B2AF4C00826E9F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2B18242D27B2AF4C00826E9F /* PBXTargetDependency */,
+			);
+			name = SILKDouYinUITests;
+			productName = SILKDouYinUITests;
+			productReference = 2B18242B27B2AF4C00826E9F /* SILKDouYinUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2B1823FE27B2AF4800826E9F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					2B18240527B2AF4800826E9F = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+					2B18242027B2AF4C00826E9F = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = 2B18240527B2AF4800826E9F;
+					};
+					2B18242A27B2AF4C00826E9F = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = 2B18240527B2AF4800826E9F;
+					};
+				};
+			};
+			buildConfigurationList = 2B18240127B2AF4800826E9F /* Build configuration list for PBXProject "SILKDouYin" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2B1823FD27B2AF4800826E9F;
+			productRefGroup = 2B18240727B2AF4800826E9F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2B18240527B2AF4800826E9F /* SILKDouYin */,
+				2B18242027B2AF4C00826E9F /* SILKDouYinTests */,
+				2B18242A27B2AF4C00826E9F /* SILKDouYinUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2B18240427B2AF4800826E9F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2BA6A987280B15C7004DFCC1 /* user.json in Resources */,
+				2B18241927B2AF4C00826E9F /* LaunchScreen.storyboard in Resources */,
+				2BA946A0281DA4A400B1C0DC /* splash_image.jpeg in Resources */,
+				2B18241627B2AF4C00826E9F /* Assets.xcassets in Resources */,
+				2B01730C28156133005A0F5B /* shake_hand.gif in Resources */,
+				2BD0B5E6281FCE3D00F63527 /* Klee_image.jpg in Resources */,
+				2BB297092820448200C2E41C /* user_background.jpeg in Resources */,
+				2B18241427B2AF4800826E9F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2B18241F27B2AF4C00826E9F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2B18242927B2AF4C00826E9F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2B18240227B2AF4800826E9F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2BBA7C9E27F2BCDE0098CB7A /* SILKFeedModel.m in Sources */,
+				2BA26FA92813DFF200811A31 /* SILKSplashButtonView.m in Sources */,
+				2B302BFD27F034CE00C165BA /* SILKMacros.m in Sources */,
+				2B302C2D27F0CD9800C165BA /* SILKMainTabBar.m in Sources */,
+				2B01168E281501B6005A0F5B /* SILKSplashShakeTipView.m in Sources */,
+				2BBA7C9B27F2B25B0098CB7A /* SILKFeedTableCell.m in Sources */,
+				2BBA7CAD27F2C24B0098CB7A /* SILKCacheCenter.m in Sources */,
+				2BB2970728202AD900C2E41C /* SILKUserLoginView.m in Sources */,
+				2BA26FAF2813E97000811A31 /* SILKSplashSlideSideContainer.m in Sources */,
+				2B011694281501DE005A0F5B /* SILKSplashMotionManager.m in Sources */,
+				2B64469727F4A2EE0024AE5B /* SILKFeedLoveView.m in Sources */,
+				2BA26FC42814263B00811A31 /* SILKSplashGoButtonContainer.m in Sources */,
+				2BFA555A281647C600FCA466 /* SILKSplashPageContainer.m in Sources */,
+				2BB297022820245C00C2E41C /* SILKBaseViewController.m in Sources */,
+				2B18240B27B2AF4800826E9F /* AppDelegate.m in Sources */,
+				2BA26FB52813EB4900811A31 /* SILKSplashSlideUpContainer.m in Sources */,
+				2BBA7AE727F19DC20098CB7A /* NSMethodSignature+SILKAdditions.m in Sources */,
+				2BA26FC12814262700811A31 /* SILKSplashGoButtonView.m in Sources */,
+				2B01730F281574E5005A0F5B /* SILKSplashView+Gesture.m in Sources */,
+				2BA6A982280B1301004DFCC1 /* SILKUserManager.m in Sources */,
+				2BBA7BBF27F1FE190098CB7A /* SILKFeedViewController.m in Sources */,
+				2B302C3E27F0D94000C165BA /* UIDevice+SILKAdditions.m in Sources */,
+				2B18241C27B2AF4C00826E9F /* main.m in Sources */,
+				2B310698280C34E800768BE0 /* SILKUserCollectionFlowLayout.m in Sources */,
+				2B302C2227F0989200C165BA /* SILKService.m in Sources */,
+				2B017313281576F7005A0F5B /* SILKBaseGestureRecognizer.m in Sources */,
+				2BA26F9A2813D37E00811A31 /* SILKSplashView.m in Sources */,
+				2BBA7CA327F2BE150098CB7A /* SILKVideoModel.m in Sources */,
+				2BA26FB82813EBC200811A31 /* SILKSplashSlideUpButton.m in Sources */,
+				2B64469427F49C9B0024AE5B /* SILKFeedMusicCDView.m in Sources */,
+				2BA26FAC2813E96000811A31 /* SILKSplashSlideSideView.m in Sources */,
+				2BA26FB22813EB3700811A31 /* SILKSplashSlideUpView.m in Sources */,
+				2B310695280C313500768BE0 /* SILKUserCollectionCell.m in Sources */,
+				2B302C3027F0CE8900C165BA /* UIImage+SILKAdditions.m in Sources */,
+				2B302C0627F03DCC00C165BA /* NSString+SILKAdditions.m in Sources */,
+				2B302C1127F0669500C165BA /* SILKMainTabBarController.m in Sources */,
+				2B302BF527F031FC00C165BA /* UIWindow+SILKAdditions.m in Sources */,
+				2BA6A98D280B1C89004DFCC1 /* SILKUserInfoHeader.m in Sources */,
+				2B011691281501C7005A0F5B /* SILKSplashShakeContainer.m in Sources */,
+				2BBA7BC327F1FEFC0098CB7A /* SILKAVPlayerView.m in Sources */,
+				2B302BF827F0344D00C165BA /* UIColor+SILKAdditions.m in Sources */,
+				2BFA5557281647B800FCA466 /* SILKSplashPageView.m in Sources */,
+				2B64469A27F4BC2F0024AE5B /* SILKFeedFocusView.m in Sources */,
+				2BBA7E5427F376C00098CB7A /* SILKFeedManager.m in Sources */,
+				2B9E337E27EF4C77008CEFE2 /* NSDictionary+SILKAdditions.m in Sources */,
+				2B302C0027F0350B00C165BA /* SILKHookUtil.m in Sources */,
+				2B13F52927E36C1C009BC6BF /* NSArray+SILKAdditions.m in Sources */,
+				2BA6A98A280B17F6004DFCC1 /* SILKUserViewController.m in Sources */,
+				2BA26FBB2813F00200811A31 /* SILKSplashSkipView.m in Sources */,
+				2BBA7BC627F1FF160098CB7A /* SILKAVPlayerManager.m in Sources */,
+				2B302BEA27F030CB00C165BA /* UIView+SILKAdditions.m in Sources */,
+				2BA6A985280B1358004DFCC1 /* SILKUserModel.m in Sources */,
+				2B64469E27F4C7390024AE5B /* SILKFeedSharePopView.m in Sources */,
+				2BBA7E5727F3776F0098CB7A /* SILKPhotoManager.m in Sources */,
+				2BA26FA02813D66800811A31 /* SILKSplashButtonViewContainer.m in Sources */,
+				2BA6A990280B2393004DFCC1 /* SILKUserSlideTabBar.m in Sources */,
+				2B302C0E27F05DAA00C165BA /* SILKMainManager.m in Sources */,
+				2BA704952816FCE4003CCDBF /* SILKWebViewController.m in Sources */,
+				2B0DBBE327FEB873006983F1 /* SILKCommerceManager.m in Sources */,
+				2B6445C127F493720024AE5B /* SILKFeedMusicNameLabel.m in Sources */,
+				2B302C0327F03D7500C165BA /* NSData+SILKAdditions.m in Sources */,
+				2B302C4127F0E28200C165BA /* UITabBar+SILKAdditions.m in Sources */,
+				2B302C1E27F07FAA00C165BA /* SILKServiceCenter.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2B18241D27B2AF4C00826E9F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B18242627B2AF4C00826E9F /* SILKDouYinTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2B18242727B2AF4C00826E9F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B18243027B2AF4C00826E9F /* SILKDouYinUITests.m in Sources */,
+				2B18243227B2AF4C00826E9F /* SILKDouYinUITestsLaunchTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2B18242327B2AF4C00826E9F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2B18240527B2AF4800826E9F /* SILKDouYin */;
+			targetProxy = 2B18242227B2AF4C00826E9F /* PBXContainerItemProxy */;
+		};
+		2B18242D27B2AF4C00826E9F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2B18240527B2AF4800826E9F /* SILKDouYin */;
+			targetProxy = 2B18242C27B2AF4C00826E9F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2B18241227B2AF4800826E9F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2B18241327B2AF4800826E9F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2B18241727B2AF4C00826E9F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2B18241827B2AF4C00826E9F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2B18243327B2AF4C00826E9F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		2B18243427B2AF4C00826E9F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2B18243627B2AF4C00826E9F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = U3J6JKKXP2;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SILKDouYin/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.UESTC.ZQ.SILKDouYin;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2B18243727B2AF4C00826E9F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = U3J6JKKXP2;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SILKDouYin/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.UESTC.ZQ.SILKDouYin;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		2B18243927B2AF4C00826E9F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.UESTC.ZQ.SILKDouYinTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SILKDouYin.app/SILKDouYin";
+			};
+			name = Debug;
+		};
+		2B18243A27B2AF4C00826E9F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.UESTC.ZQ.SILKDouYinTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SILKDouYin.app/SILKDouYin";
+			};
+			name = Release;
+		};
+		2B18243C27B2AF4C00826E9F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.UESTC.ZQ.SILKDouYinUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SILKDouYin;
+			};
+			name = Debug;
+		};
+		2B18243D27B2AF4C00826E9F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.UESTC.ZQ.SILKDouYinUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SILKDouYin;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2B18240127B2AF4800826E9F /* Build configuration list for PBXProject "SILKDouYin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2B18243327B2AF4C00826E9F /* Debug */,
+				2B18243427B2AF4C00826E9F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2B18243527B2AF4C00826E9F /* Build configuration list for PBXNativeTarget "SILKDouYin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2B18243627B2AF4C00826E9F /* Debug */,
+				2B18243727B2AF4C00826E9F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2B18243827B2AF4C00826E9F /* Build configuration list for PBXNativeTarget "SILKDouYinTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2B18243927B2AF4C00826E9F /* Debug */,
+				2B18243A27B2AF4C00826E9F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2B18243B27B2AF4C00826E9F /* Build configuration list for PBXNativeTarget "SILKDouYinUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2B18243C27B2AF4C00826E9F /* Debug */,
+				2B18243D27B2AF4C00826E9F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2B1823FE27B2AF4800826E9F /* Project object */;
+}
