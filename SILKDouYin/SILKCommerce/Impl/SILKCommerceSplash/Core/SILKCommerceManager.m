@@ -19,9 +19,11 @@
 
 #import <WebKit/WebKit.h>
 
-@interface SILKCommerceManager () <SILKSplashDelegate>
+@interface SILKCommerceManager () <SILKSplashDelegate, SILKWebViewDelegate>
 
 @property (nonatomic, strong) SILKSplashView *splashView;
+
+@property (nonatomic, strong) SILKWebViewController *webVC;
 
 @end
 
@@ -53,23 +55,29 @@ BIND_PROTOCOL(SILKCommerceManager);
     CGRect splashFrame = CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT);
     self.splashView = [[SILKSplashView alloc] initWithFrame:splashFrame complianceType:type delegate:self];
     [[UIWindow SILK_keyWindow] addSubview:self.splashView];
+    
+    NSString *web_url = @"https://www.bilibili.com/";
+    
+    self.webVC = [[SILKWebViewController alloc] initWithUrl:web_url];
+    self.webVC.delegate = self;
+    [[UIWindow SILK_keyWindow] insertSubview:self.webVC.view belowSubview:self.splashView];
+    
 }
 
-#pragma mark - SILKSplashProtocol
+#pragma mark - SILKSplashDelegate
 
 - (void)splashViewShowFinished {
     [self.splashView removeFromSuperview];
     self.splashView = nil;
 }
 
+- (void)removeLandPage {
+    [self removeWebView];
+}
+
 - (void)openWebViewWithAnimationBlock:(SILKSplashAnimationBlock)animationBlock andType:(SILKSplashComplianceType)type {
-    NSString *web_url = @"https://www.bilibili.com/";
-    
-    SILKWebViewController *webVC = [[SILKWebViewController alloc] initWithUrl:web_url];
     if (animationBlock) {
-        [[UIWindow SILK_keyWindow] addSubview:webVC.view];
-        
-        UIView *toView = webVC.view;
+        UIView *toView = self.webVC.view;
         
         switch (type) {
             case SILKSplashComplianceTypeSlideUp: {
@@ -80,7 +88,7 @@ BIND_PROTOCOL(SILKCommerceManager);
             } break;
             case SILKSplashComplianceTypeSlideSide: {
                 toView.frame = CGRectMake(SCREEN_WIDTH, 0, SCREEN_WIDTH, SCREEN_HEIGHT);
-                [UIView animateWithDuration:0.3f animations:^{
+                [UIView animateWithDuration:0.4f animations:^{
                     toView.center = CGPointMake(SCREEN_WIDTH / 2.0, SCREEN_HEIGHT / 2.0);
                 }];
             } break;
@@ -89,9 +97,14 @@ BIND_PROTOCOL(SILKCommerceManager);
         }
         
         animationBlock(YES);
-    } else {
-        [[UIWindow SILK_keyWindow] addSubview:webVC.view];
     }
+}
+
+#pragma mark - SILKWebViewDelegate
+
+- (void)removeWebView {
+    [self.webVC.view removeFromSuperview];
+    self.webVC = nil;
 }
 
 @end

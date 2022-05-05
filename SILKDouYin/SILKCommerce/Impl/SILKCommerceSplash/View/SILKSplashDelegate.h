@@ -19,6 +19,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (void)splashViewShowFinished;
 
+- (void)removeLandPage;
+
 - (void)openWebViewWithAnimationBlock:(nullable SILKSplashAnimationBlock)animationBlock andType:(SILKSplashComplianceType)type;
 @end
 

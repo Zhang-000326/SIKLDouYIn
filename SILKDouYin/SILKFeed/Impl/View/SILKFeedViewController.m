@@ -56,7 +56,7 @@ NSString * const kSILKFeedTableCell = @"kSILKFeedTableCell";
     [self setBackgroundImage:@"feed_video_loading"];
     [self setUpView];
     
-    [GET_INSTANCE_FROM_PROTOCOL(SILKCommerceManager) displaySplashFor:SILKSplashComplianceTypeButton];
+    [GET_INSTANCE_FROM_PROTOCOL(SILKCommerceManager) displaySplashFor:SILKSplashComplianceTypeSlideSide];
 }
 
 - (void)setBackgroundImage:(NSString *)imageName {

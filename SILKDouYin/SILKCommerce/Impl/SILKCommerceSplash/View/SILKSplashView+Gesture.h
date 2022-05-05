@@ -7,11 +7,16 @@
 
 #import "SILKSplashView.h"
 
+@class SILKBaseTapGestureRecognizer;
 @class SILKBasePanGestureRecognizer;
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface SILKSplashView (Gesture)
+
+- (void)onButtonTapGesture:(SILKBaseTapGestureRecognizer *)gesture;
+
+- (void)onSlidePanGesture:(SILKBasePanGestureRecognizer *)gesture;
 
 - (void)onPagePanGesture:(SILKBasePanGestureRecognizer *)gesture;
 

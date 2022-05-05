@@ -9,7 +9,15 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+@protocol SILKWebViewDelegate <NSObject>
+
+- (void)removeWebView;
+
+@end
+
 @interface SILKWebViewController : UIViewController
+
+@property (nonatomic, weak) id<SILKWebViewDelegate> delegate;
 
 - (instancetype)initWithUrl:(NSString *)url;
 

@@ -32,7 +32,6 @@
 @property (nonatomic, strong) UIView *pageView;
 @property (nonatomic, strong) UILabel *tipsLabel;
 @property (nonatomic, strong) UIView *imageView;
-@property (nonatomic, strong) UIImageView *loadView;
 
 @property (nonatomic, strong) CADisplayLink *guideDisplayLink;  ///< 引导时的翻页帧动画
 @property (nonatomic, assign) NSUInteger frameIndex;
@@ -66,10 +65,6 @@
         self.maskLayer.lineWidth = 1.f;
         self.maskLayer.strokeColor = [UIColor clearColor].CGColor;
         self.pageView.layer.mask = self.maskLayer;
-        
-        self.loadView.SILK_centerX = frame.size.width / 2;
-        self.loadView.SILK_centerY = frame.size.height / 2;
-        [self.pageView addSubview:self.loadView];
         
         self.shapeLayer = [CAShapeLayer layer];
         self.shapeLayer.strokeColor = [UIColor clearColor].CGColor;
@@ -427,16 +422,6 @@
     }
     
     return _imageView;
-}
-
-- (UIImageView *)loadView {
-    if (!_loadView) {
-        _loadView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 147.6f, 32.8f)];
-        _loadView.backgroundColor = [UIColor clearColor];
-        UIImage *pageImage = [UIImage SILK_imageWithColor:[UIColor colorWithWhite:1 alpha:1] size:CGSizeMake(self.SILK_width, self.SILK_height)];
-        [_loadView setImage:pageImage];
-    }
-    return _loadView;
 }
 
 @end

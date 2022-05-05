@@ -11,9 +11,9 @@
 #import "SILKSplashDelegate.h"
 
 #import "SILKSplashSkipView.h"
+#import "SILKSplashButtonViewContainer.h"
 #import "SILKSplashSlideUpContainer.h"
 #import "SILKSplashSlideSideContainer.h"
-#import "SILKSplashButtonViewContainer.h"
 #import "SILKSplashGoButtonContainer.h"
 #import "SILKSplashShakeContainer.h"
 #import "SILKSplashPageContainer.h"
@@ -108,11 +108,19 @@
 - (void)setupSlideUpView {
     self.slideUpContainer = [[SILKSplashSlideUpContainer alloc] initWithFrame:self.bounds];
     [self addSubview:self.slideUpContainer];
+    
+    SILKBasePanGestureRecognizer *slideGesture = [[SILKBasePanGestureRecognizer alloc] initWithTarget:self action:@selector(onSlidePanGesture:)];
+    slideGesture.cancelsTouchesInView = NO;
+    [self.slideUpContainer addGestureRecognizer:slideGesture];
 }
 
 - (void)setupSlideSideView {
     self.slideSideContainer = [[SILKSplashSlideSideContainer alloc] initWithFrame:self.bounds];
     [self addSubview:self.slideSideContainer];
+    
+    SILKBasePanGestureRecognizer *slideGesture = [[SILKBasePanGestureRecognizer alloc] initWithTarget:self action:@selector(onSlidePanGesture:)];
+    slideGesture.cancelsTouchesInView = NO;
+    [self.slideSideContainer addGestureRecognizer:slideGesture];
 }
 
 - (void)setupGoButtonView {
@@ -143,6 +151,10 @@
     
     if (self.jumpAnimationIsShowing) {
         return;
+    }
+    
+    if (self.delegate && [self.delegate respondsToSelector:@selector(removeLandPage)]) {
+        [self.delegate removeLandPage];
     }
     
     [self splashCompletedWithAnimation:YES];
