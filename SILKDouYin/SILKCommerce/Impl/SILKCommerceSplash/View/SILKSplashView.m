@@ -11,17 +11,26 @@
 #import "SILKSplashDelegate.h"
 
 #import "SILKSplashSkipView.h"
+
 #import "SILKSplashButtonViewContainer.h"
+#import "SILKSplashButtonView.h"
+
 #import "SILKSplashSlideUpContainer.h"
+
 #import "SILKSplashSlideSideContainer.h"
+
 #import "SILKSplashGoButtonContainer.h"
+#import "SILKSplashGoButtonView.h"
+
 #import "SILKSplashShakeContainer.h"
+#import "SILKSplashMotionManager.h"
+
 #import "SILKSplashPageContainer.h"
 #import "SILKSplashPageView.h"
 
 #import "SILKCommerceDefine.h"
 
-@interface SILKSplashView ()
+@interface SILKSplashView () <SILKSplashMotionDelegate>
 
 @property (nonatomic, weak) id<SILKSplashDelegate> delegate;
 
@@ -103,6 +112,9 @@
 - (void)setupButtonView {
     self.buttonContainer = [[SILKSplashButtonViewContainer alloc] initWithFrame:self.bounds];
     [self addSubview:self.buttonContainer];
+    
+    SILKBaseTapGestureRecognizer *tapGesture = [[SILKBaseTapGestureRecognizer alloc] initWithTarget:self action:@selector(splashClicked)];
+    [self.buttonContainer.buttonView addGestureRecognizer:tapGesture];
 }
 
 - (void)setupSlideUpView {
@@ -126,12 +138,16 @@
 - (void)setupGoButtonView {
     self.goButtonContainer = [[SILKSplashGoButtonContainer alloc] initWithFrame:self.bounds];
     [self addSubview:self.goButtonContainer];
+    
+    SILKBaseTapGestureRecognizer *tapGesture = [[SILKBaseTapGestureRecognizer alloc] initWithTarget:self action:@selector(splashClicked)];
+    [self.goButtonContainer.goButtonView addGestureRecognizer:tapGesture];
 }
 
 - (void)setupShakeView {
     self.shakeContainer = [[SILKSplashShakeContainer alloc] initWithFrame:self.bounds];
     [self addSubview:self.shakeContainer];
     [self.shakeContainer showShakeTipView];
+    self.shakeContainer.delegate = self;
 }
 
 - (void)setupPageView {
@@ -168,6 +184,14 @@
     [self splashCompletedWithAnimation:(animationBlock ? YES : NO)];
 }
 
+- (void)splashClicked {
+    if (self.delegate && [self.delegate respondsToSelector:@selector(openWebViewWithAnimationBlock:andType:)]) {
+        [self.delegate openWebViewWithAnimationBlock:nil andType:SILKSplashComplianceTypeButton];
+    }
+    
+    [self splashCompletedWithAnimation:NO];
+}
+
 - (void)splashCompletedWithAnimation:(BOOL)animation {
     if (self.markWillDismiss) {
         return;
@@ -195,6 +219,16 @@
 
 - (void)invalidPerform {
     [NSObject cancelPreviousPerformRequestsWithTarget:self];
+}
+
+#pragma mark - SILKSplashMotionDelegate
+
+- (void)didReceiveShakeEvent {
+    if (self.delegate && [self.delegate respondsToSelector:@selector(openWebViewWithAnimationBlock:andType:)]) {
+        [self.delegate openWebViewWithAnimationBlock:nil andType:SILKSplashComplianceTypeShake];
+    }
+    
+    [self splashCompletedWithAnimation:NO];
 }
 
 #pragma mark - Getter && Setter

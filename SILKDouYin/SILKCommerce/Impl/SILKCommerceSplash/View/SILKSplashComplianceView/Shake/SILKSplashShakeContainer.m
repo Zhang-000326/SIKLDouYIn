@@ -89,7 +89,9 @@
 #pragma mark - SILKSplashMotionDelegate
 
 - (void)didReceiveShakeEvent {
-    
+    if (self.delegate && [self.delegate respondsToSelector:@selector(didReceiveShakeEvent)]) {
+        [self.delegate didReceiveShakeEvent];
+    }
 }
 
 #pragma mark - Getter && Setter
